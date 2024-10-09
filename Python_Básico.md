@@ -210,4 +210,51 @@ print("tienes:" + str(spent))
 
 Si llamamos a la funcion y ponemos el valor "sweets", la funcion devolvera el numero decimal. 
 
+# Archivos
+
+En python, podemos leer y escribir archivos. Esto en ciberseguridad es buenom podemos escribir scripts comunes para importar o exportar arhcivos, o importar 100 paginas para enumearlas
+
+```
+f = open("file_name", "r")
+print(f.read())
+```
+
+Para abrir un archivo, utilizamos el built-in "open()", el parametro "r" es un estandar de "read" se usa para leer el contenido del archivo. La variable tiene un read() metodo par aleer el contenido del fichero. Podemos usar el metodo "readliners()" y bucles para leer cada linea., util si queremos listar items o nuevas lineas.
+
+Podemos crear y escribir ficheros, si quisieramos escribir un archivo esitente, podemos abrirlo usando la función open() y añadir "a" y si queremos escribir utilizaremos "w"
+
+```
+f = open("demofile1.txt", "a") # Append to an existing file
+f.write("The file will include more text..")
+f.close()
+
+f = open("demofile2.txt", "w") # Creating and writing to a new file
+f.write("demofile2 file created, with this content in!")
+f.close()
+```
+# Importaciones
+
+En python podemos importar librerias, colecciones que contienen funciones. estas importanciones o librerias importan muchas funciones que podemos usar sin necesidad de escirbir. Por ejemplo la libreria "date" no da acces oa muchisimos funciones.
+
+```
+import datetime
+current_time = datetime.datetime.now()
+print(current_time)
+```
+
+Importamos la libreria usando "import" y referenciando a la función en cuestión
+
+Librerias como pentester:
+
+- Request - Simple libreria HTTP
+- Scapy : send, sniff, sissect forge network packets
+- Pwntools - CTF y exploits
+
+Muchas de estas librerias esta ya instaldas pero en caso de eso viene bien tener instalado "scapy" 
+
+```
+pip install scapy
+```
+
+
 
