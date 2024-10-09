@@ -125,3 +125,89 @@ Componentes:
 
 ![image](https://github.com/user-attachments/assets/f02d99aa-30c4-4950-bccb-4d157e7e63c3)
 
+# Bucles
+
+En programación, los bucles permiten que los programas iteren y realicen acciones varias veces, tenemos dos tipos de bucles, "for y while"
+
+## Bucles While
+
+Vamos a ver primero de toodo la estructura de un bucle while. Podemos hacer que el bucle sea indefinido o cuando la condición se cumpla.
+
+```
+i = 1
+while 1 <=10:
+  print(i)
+  i = i + 1
+```
+
+Este bucle como vemos se repetira 10 veces, hasta que la variable llegue a iteración en cuestión.
+
+- La variable i = 1
+- La declaración while estepcifica cuando empieza y cuando acaba el bucle
+- Cada vez hay un bucle, empieza con el anterior
+- La siguiente linea hace que a variable i aumente su valor en 1
+
+## Bucle For
+
+Un bucle for se usa para iterar secuencias de una lista, las listas se usan para guardar objector dentro de una sola variable.
+
+```
+paginas = ["facebook.com", "google.com", "amazon.com"]
+for site in paginas:
+    print(site)
+```
+
+Este bucle se ejecuta 3 veces, listando toda la variable "paginas"
+
+- La lista guarda 3 objetos
+- El bucle itera cada elemento, y printea el elemento
+- El programa para cuando el bucle termina y no quedan más elementos.
+
+En python, tambien podemos hacer un rango de numeros usando la función "range". Un ejemplo de numeros 0-4. En programación siempre el número que se empieza es el 0, entonces contar 5 es 4 por que (0,1,2,3,4)
+
+```
+for i in range(5):
+  print(i)
+```
+
+En caso de querer hacer del 0 a l 50
+
+```
+for i in range(51):
+  print(i)
+```
+
+# Introducción a las funciones
+
+Cuando un programa se hace mas grande y mas complejo, mucho codigo se repite, escribir el mismo codigo, aquí entran las funciones. Las funciones son bloques de codigo que llaman a diferentes lugares del programa.
+
+Tenemos funciones que trabajan como una claculadora entre dos puntos, otro de distancia ente puntos, condiciones, etc.
+
+```
+def sayHello(name):
+    print("Hola " + name + "! Encantado de conocerte")
+
+sayHello("ben") # Output = Hola ben ! Encantado de conocerte.
+```
+
+- def : Indica el inicio de la funcion, dando el parametro de la funcion "name"
+- Sigue el nomre de la función y un parentesis donde esta los avlores que pondremos ()
+- : para cerrar
+
+```
+def calcCoste(item):
+  if(item == "sweets"):
+          return 3.99
+  elif (item == "oranges"):
+          return 1.99
+  else:
+          return 0.99
+
+spent = 10
+spent = spent + calcCoste("sweets")
+print("tienes:" + str(spent))
+```
+
+Si llamamos a la funcion y ponemos el valor "sweets", la funcion devolvera el numero decimal. 
+
+
